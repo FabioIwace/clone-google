@@ -1,0 +1,111 @@
+/* RESET PADRÃO CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.pesquisa input {
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.pesquisa input:focus {
+    border-color: #4285f4;
+}
+
+.botao {
+    margin-top: 20px;
+}
+
+.botao button {
+    font-size: 14px;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pesquisa-btn, .sorte-btn {
+    color: #5f6368;
+    background-color: #f8f8f8;
+}
+
+.pesquisa-btn:hover, .sorte-btn:hover {
+    background-color: #f1f1f1;
+}
+
+/* footer {
+    margin-top: 50px;
+} */
+
+/* --- Tema escuro --- */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Ajustes de input no tema escuro */
+body.dark .pesquisa input {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+/* Ajustes de botões no tema escuro */
+body.dark .botao button {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+/* Hover dos botões no tema escuro */
+body.dark .pesquisa-btn:hover,
+body.dark .sorte-btn:hover {
+  background-color: #444;
+}
+
+/* Se quiser que o botão “Mudar Tema” também fique com estilo dark diferenciado */
+body.dark footer #btnTema {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+#btnTema {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #f8f8f8;
+    color: #5f6368;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
