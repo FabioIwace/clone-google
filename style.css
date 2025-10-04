@@ -60,10 +60,6 @@ body {
     background-color: #f1f1f1;
 }
 
-/* footer {
-    margin-top: 50px;
-} */
-
 /* --- Tema escuro --- */
 body.dark {
   background-color: #121212;
@@ -108,4 +104,5 @@ body.dark footer #btnTema {
     border-radius: 5px;
     cursor: pointer;
     z-index: 1000;
+
 }
